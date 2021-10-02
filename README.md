@@ -1,6 +1,6 @@
 # Hero-Index
 
-This website will allow the user to input a heroes name and it will display a photo of them, along with their previous appearances.
+This website will allow the user to input a heroes name, and will display a photo of them, along with their previous appearances.
 
 #API/Sample
 https://superheroapi.com/
