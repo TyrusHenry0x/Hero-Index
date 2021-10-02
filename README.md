@@ -43,7 +43,7 @@ https://whimsical.com/hero-index-BDsqsX9CojVUZcZ6BGSNKJ
 - Create a layout
 - Style the page using flexbox and css
 - Add media query for mobile devices
-# PostMVP 
+## PostMVP 
 - Create a window that holds the heroes info and picture 
 - Add additional info about them (ie stats, origin, team)
 
