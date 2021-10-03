@@ -37,13 +37,13 @@ https://superheroapi.com/
 # Wire Frames
 https://whimsical.com/hero-index-BDsqsX9CojVUZcZ6BGSNKJ
 
-# MVP/PostMVP
+# MVP
 - Implement Hero api
 - Allow usuer to search hero info
 - Create a layout
 - Style the page using flexbox and css
 - Add media query for mobile devices
-## PostMVP 
+## PMVP 
 - Create a window that holds the heroes info and picture 
 - Add additional info about them (ie stats, origin, team)
 
