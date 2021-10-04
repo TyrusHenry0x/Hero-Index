@@ -47,7 +47,7 @@ https://whimsical.com/hero-index-BDsqsX9CojVUZcZ6BGSNKJ
 - Create a window that holds the heroes info and picture 
 - Add additional info about them (ie stats, origin, team)
 
-#Schedule
+# Schedule
 | Day | Objective | Status |
 |    :---:     |     :---:      |     :---:     |
 |10/1| readme finished|complete|
