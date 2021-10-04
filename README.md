@@ -57,7 +57,7 @@ https://whimsical.com/hero-index-BDsqsX9CojVUZcZ6BGSNKJ
 |10/7 | checking mvp | incomplete| 
 |10/8| presentation| incomplete|
 
-#Timeframes
+# TimeFrames
 |Goal| Time Expected| Actual Time|
 | :---: | :---: | :---: |
 |Pseudo code| 2hrs | |
