@@ -36,6 +36,7 @@ fetch(searchUrl)
       console.error(`error: ${err}`)
     })
 
+console.log('test');
 // document.getElementById('hero-name').onkeyup = getData;
 
 // let herId = 0
