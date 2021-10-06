@@ -25,18 +25,20 @@ let newNum = randomizer()
 
 const searchUrl = `https://superheroapi.com/api.php/2893137147570471/${newNum}`;
 
-// fetch(searchUrl)
-//     .then((res) => { return res.json() })
-//     .then((resJSON) => {
-//       console.log(resJSON)
-//       showHeroInfo(resJSON.results)
+const fetchrequest = () => {
+  fetch(searchUrl)
+    .then((res) => { return res.json() })
+    .then((resJSON) => {
+      console.log(resJSON)
+      // showHeroInfo(resJSON.results)
 
-//     })
-//     .catch((err) => {
-//       console.error(`error: ${err}`)
-//     })
+    })
+    .catch((err) => {
+      console.error(`error: ${err}`)
+    })
+}
 
-// console.log('test');
+
 // document.getElementById('hero-name').onkeyup = getData;
 
 // let herId = 0
