@@ -7,9 +7,13 @@
 
 const result = (hero) => {
   const apiKey = '2893137147570471';
-  const searchUrl = `https://superheroapi.com/api.php/${apiKey}/search/${hero}`;
+  const searchUrl = `https://superheroapi.com/api.php/${apiKey}/search/`;
 
-  console.log('making request')
+  let searchResults = [];
+  const wordLimit = 2;
+  const loader - document.getElementById('loader')
+
+  
 
   fetch(searchUrl)
     .then((res) => { return res.json() })
@@ -23,49 +27,54 @@ const result = (hero) => {
     })
 }
 
-// result('thor')
-const heroInfoDiv = document.querySelector('#hero-data')
+document.getElementById('hero-name').onkeyup = getData;
 
-const showHeroInfo = (heroInfo) => {
+let herId = 0
 
-  heroInfo.forEach(hero => {
-    const name = document.createElement('h2')
-    name.innerText = hero.name
-    name.className = 'heroInfo'
-    heroInfoDiv.append(name)
+const val = document.getElementById('hero-name').value;
+var list = document.getElementById('auto-complete');
+clearlist();
 
-    const power = document.createElement('h2')
-    power.innerText = hero.power
-    power.className = 'heroInfo'
-    heroInfoDiv.append(power)
+// const showHeroInfo = (heroInfo) => {
 
-    const intelligence = document.createElement('h2')
-    intelligence.innerText = power.intelligence
-    intelligence.className = 'heroInfo'
-    heroInfoDiv.append(intelligence)
+//   heroInfo.forEach(hero => {
+//     const name = document.createElement('h2')
+//     name.innerText = hero.name
+//     name.className = 'heroInfo'
+//     heroInfoDiv.append(name)
 
-    const strength = document.createElement('h2')
-    strength.innerText = power.strength
-    strength.className = 'heroInfo'
-    heroInfoDiv.append(strength)
+//     const power = document.createElement('h2')
+//     power.innerText = hero.power
+//     power.className = 'heroInfo'
+//     heroInfoDiv.append(power)
 
-    const speed = document.createElement('h2')
-    speed.innerText = power.speed
-    speed.className = 'heroInfo'
-    heroInfoDiv.append(speed)
+//     const intelligence = document.createElement('h2')
+//     intelligence.innerText = power.intelligence
+//     intelligence.className = 'heroInfo'
+//     heroInfoDiv.append(intelligence)
 
-    const durability = document.createElement('h2')
-    durability.innerText = power.durability
-    durability.className = 'heroInfo'
-    heroInfoDiv.append(durability)
+//     const strength = document.createElement('h2')
+//     strength.innerText = power.strength
+//     strength.className = 'heroInfo'
+//     heroInfoDiv.append(strength)
 
-    const combat = document.createElement('h2')
-    power.innerText = hero.power
-    power.className = 'heroInfo'
-    heroInfoDiv.append(power)
+//     const speed = document.createElement('h2')
+//     speed.innerText = power.speed
+//     speed.className = 'heroInfo'
+//     heroInfoDiv.append(speed)
 
-  })
-}
+//     const durability = document.createElement('h2')
+//     durability.innerText = power.durability
+//     durability.className = 'heroInfo'
+//     heroInfoDiv.append(durability)
+
+//     const combat = document.createElement('h2')
+//     power.innerText = hero.power
+//     power.className = 'heroInfo'
+//     heroInfoDiv.append(power)
+
+//   })
+// }
 
 
 // const hero = document.createElement("div")
