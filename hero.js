@@ -8,25 +8,32 @@ const apiKey = '2893137147570471'
 // const result = (hero) => {
 //   const apiKey = '2893137147570471';
 
-  
-  
+
+
 // }
 
 function randomizer() {
   let calc = Math.floor((Math.random() * 731) + 1);
-  return(calc);
+  return (calc);
 }
 
-let newNum = randomizer()
+
 
 
 
 // document.querySelector('#random-button').addEventListener('click', randomizer())
 
-const searchUrl = `https://superheroapi.com/api.php/2893137147570471/${newNum}`;
+
 
 const fetchRequest = () => {
-  fetch(searchUrl)
+
+  let newNum = randomizer()
+
+  const data = `https://superheroapi.com/api.php/2893137147570471/${newNum}`;
+
+  console.log(data)
+
+  fetch(data)
     .then((res) => { return res.json() })
     .then((resJSON) => {
       console.log(resJSON)
@@ -38,28 +45,31 @@ const fetchRequest = () => {
     })
 }
 
-fetchRequest()
+document.querySelector('#random-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  fetchRequest()})
+  
 
 
+function createHeroCard(data) {
+  const img = document.getElementById('hero-image');
+  img.setAttribute('src', data.image.url);
+  document.getElementById('hero-name').innerText = data.name;
+  const powers = data.powerstats;
+  addPowers(powers);
+  const otherNames = data.biography.aliases;
+  aliases(otherNames);
+  biography(data.biography);
+  const connections = data.connections["group-affiliation"];
+  document.getElementById('connections').innerText = 'Connections : ' + connections;
+  const publisher = document.createElement('span')
+  publisher.innerText = data.biography.publisher;
 
-// function createHeroCard(data) {
-//   const img = document.getElementById('hero-image');
-//   img.setAttribute('src', data.image.url);
-//   document.getElementById('hero-name').innerText = data.name;
-//   const powers = data.powerstats;
-//   addPowers(powers);
-//   const otherNames = data.biography.aliases;
-//   aliases(otherNames);
-//   biography(data.biography);
-//   const connections = data.connections["group-affiliation"];
-//   document.getElementById('connections').innerText = 'Connections : ' + connections;
-//   const publisher = document.createElement('span')
-//   publisher.innerText = data.biography.publisher;
+  publisher.style.fontFamily = 'sans=serif';
+  publisher.style.fontSize = '1.3rem';
+  document.getElementById('additional-info').appendChild(publisher);
+}
 
-//   publisher.style.fontFamily = 'sans=serif';
-//   publisher.style.fontSize = '1.3rem';
-//   document.getElementById('additional-info').appendChild(publisher);
-// }
 
 
 // document.getElementById('hero-name').onkeyup = getData;

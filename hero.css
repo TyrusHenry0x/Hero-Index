@@ -6,3 +6,36 @@
 
 }
 
+html {
+  background-image: url('https://wallpapercave.com/wp/wp2483329.jpg'); 
+  background-position: center;
+  /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 
+  filter: grayscale(100%); */
+
+}
+
+
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
