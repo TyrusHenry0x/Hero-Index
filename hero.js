@@ -3,31 +3,38 @@
 // 3. Begin createing interface
 //  - Make a div for the information being displayed
 
-// const heroAPI = 'https://superheroapi.com/api.php/2893137147570471/search/'
+const apiKey = '2893137147570471'
 
 // const result = (hero) => {
 //   const apiKey = '2893137147570471';
-//   const searchUrl = `https://superheroapi.com/api.php/${apiKey}/search/`;
-  
-//   fetch(searchUrl)
-//     .then((res) => { return res.json() })
-//     .then((resJSON) => {
-//       console.log(resJSON)
-//       showHeroInfo(resJSON.results)
 
-//     })
-//     .catch((err) => {
-//       console.error(`error: ${err}`)
-//     })
+  
+  
 // }
 
 function randomizer() {
   let calc = Math.floor((Math.random() * 731) + 1);
-  console.log(calc);
+  return(calc);
 }
 
-let newNum = randomizer('#random-button');
+let newNum = randomizer()
 
+
+
+// document.querySelector('#random-button').addEventListener('click', randomizer())
+
+const searchUrl = `https://superheroapi.com/api.php/2893137147570471/${newNum}`;
+
+fetch(searchUrl)
+    .then((res) => { return res.json() })
+    .then((resJSON) => {
+      console.log(resJSON)
+      showHeroInfo(resJSON.results)
+
+    })
+    .catch((err) => {
+      console.error(`error: ${err}`)
+    })
 
 // document.getElementById('hero-name').onkeyup = getData;
 
