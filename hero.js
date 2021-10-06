@@ -5,35 +5,37 @@
 
 // const heroAPI = 'https://superheroapi.com/api.php/2893137147570471/search/'
 
-const result = (hero) => {
-  const apiKey = '2893137147570471';
-  const searchUrl = `https://superheroapi.com/api.php/${apiKey}/search/`;
-
-  let searchResults = [];
-  const wordLimit = 2;
-  const loader - document.getElementById('loader')
-
+// const result = (hero) => {
+//   const apiKey = '2893137147570471';
+//   const searchUrl = `https://superheroapi.com/api.php/${apiKey}/search/`;
   
+//   fetch(searchUrl)
+//     .then((res) => { return res.json() })
+//     .then((resJSON) => {
+//       console.log(resJSON)
+//       showHeroInfo(resJSON.results)
 
-  fetch(searchUrl)
-    .then((res) => { return res.json() })
-    .then((resJSON) => {
-      console.log(resJSON)
-      showHeroInfo(resJSON.results)
+//     })
+//     .catch((err) => {
+//       console.error(`error: ${err}`)
+//     })
+// }
 
-    })
-    .catch((err) => {
-      console.error(`error: ${err}`)
-    })
+function randomizer() {
+  let calc = Math.floor((Math.random() * 731) + 1);
+  console.log(calc);
 }
 
-document.getElementById('hero-name').onkeyup = getData;
+let newNum = randomizer('#random-button');
 
-let herId = 0
 
-const val = document.getElementById('hero-name').value;
-var list = document.getElementById('auto-complete');
-clearlist();
+// document.getElementById('hero-name').onkeyup = getData;
+
+// let herId = 0
+
+// const val = document.getElementById('hero-name').value;
+// var list = document.getElementById('auto-complete');
+// clearlist();
 
 // const showHeroInfo = (heroInfo) => {
 
@@ -93,12 +95,12 @@ clearlist();
 // const gender = superhero.appearance.gender;
 
 
-const submitButton = document.querySelector("#search-btn")
+// const submitButton = document.querySelector("#search-btn")
 
-submitButton.addEventListener("click", (ev) => {
-  ev.preventDefault()
+// submitButton.addEventListener("click", (ev) => {
+//   ev.preventDefault()
 
 
 
-  result(document.querySelector('#search-bar').value)
-})
+//   result(document.querySelector('#search-bar').value)
+// })
