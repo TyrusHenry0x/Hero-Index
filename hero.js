@@ -62,13 +62,26 @@ function createHeroCard(data) {
   // hero card
   const heroCard = document.createElement('div')
   heroCard.className = ('hero-card')
-  console.log(data.image.url)
   
+  
+  // hero name 
+  const heroName = document.createElement('h2')
+  heroName.id = ('hero-name')
+  heroCard.append(data.name)
+  
+
   // hero Image
   const heroImg = document.createElement('img')
   heroImg.src = data.image.url
   heroImg.id = ('hero-img')
   heroCard.append(heroImg)
+
+  // hero stats
+
+  const heroStats = document.createElement('h2')
+  heroStats.id = ('hero-stats')
+  heroCard.append("Power: " + (data.powerstats.power))
+
   middleCard.append(heroCard)
 
   
