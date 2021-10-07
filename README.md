@@ -51,10 +51,10 @@ https://whimsical.com/hero-index-BDsqsX9CojVUZcZ6BGSNKJ
 | Day | Objective | Status |
 |    :---:     |     :---:      |     :---:     |
 |10/1| readme finished|complete|
-|10/2| project approval | incomplete|
-|10/3 to 10/4| html/js | incomplete|
-|10/5 to 10/6 | styling/flexbox | incomplete |
-|10/7 | checking mvp | incomplete| 
+|10/2| project approval | complete|
+|10/3 to 10/4| html/js | complete|
+|10/5 to 10/6 | styling/flexbox | complete |
+|10/7 | checking mvp | complete| 
 |10/8| presentation| incomplete|
 
 # TimeFrames
