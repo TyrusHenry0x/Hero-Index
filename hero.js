@@ -77,7 +77,6 @@ function createHeroCard(data) {
   heroCard.append(heroImg)
 
   // hero stats
-
   const heroStats = document.createElement('div')
   heroStats.id = ('hero-stats')
 
@@ -109,7 +108,6 @@ heroCard.append(heroStats)
 
   middleCard.append(heroCard)
 
-  
 }
 
 
