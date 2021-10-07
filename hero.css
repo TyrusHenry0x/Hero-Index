@@ -8,6 +8,13 @@
   border-color: #450000;
 }
 
+#refresh {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://www.pngkey.com/png/full/204-2048039_refresh-icon-white-refresh-icon-png.png');
+  background-size: cover;
+}
+
 h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 100px;
@@ -27,6 +34,8 @@ html {
 #random-btn {
   padding: 20px;
   margin: 5px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
 }
 
 #question {

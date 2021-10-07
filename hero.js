@@ -29,42 +29,68 @@ const fetchRequest = () => {
 
   let newNum = randomizer()
 
-  const data = `https://superheroapi.com/api.php/2893137147570471/${newNum}`;
+  const data = `https://superheroapi.com/api.php/2893137147570471/${newNum}/`;
 
   console.log(data)
-
+  let superHeroData;
   fetch(data)
     .then((res) => { return res.json() })
     .then((resJSON) => {
       console.log(resJSON)
       // showHeroInfo(resJSON.results)
-
+      superHeroData = resJSON
+      console.log(superHeroData)
+      createHeroCard(superHeroData)
     })
     .catch((err) => {
       console.error(`error: ${err}`)
     })
-  createHeroCard()
+  
 }
 
 document.querySelector('#random-btn').addEventListener('click', (e) => {
   e.preventDefault();
-  fetchRequest()})
-  
+  fetchRequest()
+})
+
 
 function createHeroCard(data) {
-  
+  const middleCard = document.querySelector('.middle')
+
   const heroCard = document.createElement('div')
-  heroCard.className = 'hero-card'
+  heroCard.classList.add = ('hero-card')
+  console.log(data.image.url)
   
   const heroImg = document.createElement('img')
-  heroImg.className = 'hero-card-img'
-
-heroImg.src = 'data.image.url'
-  // img.setAttribute('src', data.image.url);
-
-  document.body.append(heroImg)
-
+  heroImg.src = data.image.url
+  heroCard.append(heroImg)
+  middleCard.append(heroCard)
 }
+
+
+  // const heroCard = document.createElement('div')
+  // heroCard.className = 'hero-card'
+
+  // const heroImg = document.createElement('img')
+  // heroImg.className = 'hero-card-img'
+
+  // heroImg.setAttribute('src', data[0].image.url);
+
+  // document.body.append(heroImg)
+
+
+//   const heroCard = document.createElement('div')
+//   heroCard.className = 'hero-card'
+
+//   const heroImg = document.createElement('img')
+//   heroImg.className = 'hero-card-img'
+
+// heroImg.src = 'data.image.url'
+//   // img.setAttribute('src', data.image.url);
+
+//   document.body.append(heroImg)
+
+
 
 
 // createHeroCard()
