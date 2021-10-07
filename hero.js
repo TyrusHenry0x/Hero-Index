@@ -28,7 +28,6 @@ function randomizer() {
 const fetchRequest = () => {
 
   let newNum = randomizer()
-
   const data = `https://superheroapi.com/api.php/2893137147570471/${newNum}/`;
 
   console.log(data)
@@ -53,9 +52,12 @@ document.querySelector('#random-btn').addEventListener('click', (e) => {
   fetchRequest()
 })
 
-
 function createHeroCard(data) {
-  const middleCard = document.querySelector('.middle')
+  
+
+  // imageHolderDiv.removeChild(imageHolderDiv)
+
+  const middleCard = document.querySelector('#imgHolder')
 
   const heroCard = document.createElement('div')
   heroCard.classList.add = ('hero-card')
