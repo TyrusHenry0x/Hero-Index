@@ -78,9 +78,34 @@ function createHeroCard(data) {
 
   // hero stats
 
-  const heroStats = document.createElement('h2')
+  const heroStats = document.createElement('div')
   heroStats.id = ('hero-stats')
-  heroCard.append("Power: " + (data.powerstats.power))
+
+  const heroCombat = document.createElement('h2')
+  heroCombat.append("Combat: " + (data.powerstats.combat))
+  heroStats.append(heroCombat)
+
+  const heroDurability = document.createElement('h2')
+  heroDurability.append("Durability: " + (data.powerstats.durability))
+  heroStats.append(heroDurability)
+
+  const heroIntelligence = document.createElement('h2')
+  heroIntelligence.append("Intelligence: " + (data.powerstats.intelligence))
+  heroStats.append(heroIntelligence)
+  
+  const heroPower = document.createElement('h2')
+  heroPower.append("Power: " + (data.powerstats.power))
+  heroStats.append(heroPower)
+
+  const heroSpeed = document.createElement('h2')
+  heroSpeed.append("Speed: " + (data.powerstats.speed))
+  heroStats.append(heroSpeed)
+  
+  const heroStrength = document.createElement('h2')
+  heroStrength.append("Strength: " + (data.powerstats.strength))
+  heroStats.append(heroStrength)
+
+heroCard.append(heroStats)
 
   middleCard.append(heroCard)
 
