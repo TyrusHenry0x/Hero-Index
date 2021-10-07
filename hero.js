@@ -43,12 +43,13 @@ const fetchRequest = () => {
     .catch((err) => {
       console.error(`error: ${err}`)
     })
-  
+  createHeroCard()
 }
 
 document.querySelector('#random-btn').addEventListener('click', (e) => {
   e.preventDefault();
   fetchRequest()})
+  
   
 function createHeroCard(data) {
   
@@ -58,9 +59,11 @@ function createHeroCard(data) {
   const heroImg = document.createElement('img')
   heroImg.className = 'hero-card-img'
 
-  img.setAttribute('src', data.image.url);
+heroImg.src = 'data.image.url'
+  // img.setAttribute('src', data.image.url);
 
   document.body.append(heroImg)
+
 }
 
 

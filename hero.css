@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: maroon;
-
+  margin: 0 10% 0 10%;
 }
 
 html {
@@ -14,28 +14,23 @@ html {
 
 }
 
+#random-btn {
+  padding: 20px;
+  margin: 5px;
+}
 
-
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+#question {
+  size: 50%;
 
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
+@media (max-width: 800px) {
+  #question {
+    width: 70%;
+    height: auto;
+    }  
+  
+    html {
+      background-color: maroon;
+    }
+  }
