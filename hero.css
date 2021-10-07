@@ -73,11 +73,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #450000;
+  background: #222;
   margin-left: 6%;
   margin-right: 6%;
   padding: 0;
   border-radius: 25px 3px 25px 3px;
+  border-style: solid;
+  border-color: #555;
 }
 
 #hero-img {
@@ -88,6 +90,8 @@ width: 80%;
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  color: white;
+  text-shadow: 2px 2px black;
   /* background-color: white; */
   font-family: 'Bebas Neue', cursive;
   justify-content: left;

@@ -57,7 +57,7 @@ function createHeroCard(data) {
 
   const middleCard = document.querySelector('#imgHolder')
 
-  document.querySelector('#imgHolder').pop
+  document.querySelector('#imgHolder').innerHTML = ''
 
   // hero card
   const heroCard = document.createElement('div')
