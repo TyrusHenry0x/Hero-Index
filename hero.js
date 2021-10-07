@@ -50,7 +50,7 @@ document.querySelector('#random-btn').addEventListener('click', (e) => {
   e.preventDefault();
   fetchRequest()})
   
-  
+
 function createHeroCard(data) {
   
   const heroCard = document.createElement('div')

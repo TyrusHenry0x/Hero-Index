@@ -4,6 +4,16 @@
   align-items: center;
   background-color: maroon;
   margin: 0 10% 0 10%;
+  border-radius: 15px;
+  border-color: #450000;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  margin: 0 auto;
+  color: whitesmoke;
+  text-shadow: 4px 4px #450000;
 }
 
 html {
@@ -34,3 +44,16 @@ html {
       background-color: maroon;
     }
   }
+
+@media (max-width: 600) {
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2px;
+  }
+}
+
+#random-btn {
+  border-radius: 15px 0 15px 0;
+  width: 160px;
+}
