@@ -43,34 +43,28 @@ const fetchRequest = () => {
     .catch((err) => {
       console.error(`error: ${err}`)
     })
+  
 }
 
 document.querySelector('#random-btn').addEventListener('click', (e) => {
   e.preventDefault();
   fetchRequest()})
   
-
-
 function createHeroCard(data) {
-  const img = document.getElementById('hero-image');
-  img.setAttribute('src', data.image.url);
-  document.getElementById('hero-name').innerText = data.name;
-  const powers = data.powerstats;
-  addPowers(powers);
-  const otherNames = data.biography.aliases;
-  aliases(otherNames);
-  biography(data.biography);
-  const connections = data.connections["group-affiliation"];
-  document.getElementById('connections').innerText = 'Connections : ' + connections;
-  const publisher = document.createElement('span')
-  publisher.innerText = data.biography.publisher;
+  
+  const heroCard = document.createElement('div')
+  heroCard.className = 'hero-card'
+  
+  const heroImg = document.createElement('img')
+  heroImg.className = 'hero-card-img'
 
-  publisher.style.fontFamily = 'sans=serif';
-  publisher.style.fontSize = '1.3rem';
-  document.getElementById('additional-info').appendChild(publisher);
+  img.setAttribute('src', data.image.url);
+
+  document.body.append(heroImg)
 }
 
 
+// createHeroCard()
 
 // document.getElementById('hero-name').onkeyup = getData;
 
@@ -147,3 +141,22 @@ function createHeroCard(data) {
 
 //   result(document.querySelector('#search-bar').value)
 // })
+
+
+
+
+//   document.getElementById('hero-name').innerText = data.name;
+//   const powers = data.powerstats;
+//   addPowers(powers);
+//   const otherNames = data.biography.aliases;
+//   aliases(otherNames);
+//   biography(data.biography);
+//   const connections = data.connections["group-affiliation"];
+//   document.getElementById('connections').innerText = 'Connections : ' + connections;
+//   const publisher = document.createElement('span')
+//   publisher.innerText = data.biography.publisher;
+
+//   publisher.style.fontFamily = 'sans=serif';
+//   publisher.style.fontSize = '1.3rem';
+//   document.getElementById('additional-info').appendChild(publisher);
+// }
