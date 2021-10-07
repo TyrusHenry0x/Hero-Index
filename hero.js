@@ -55,18 +55,23 @@ document.querySelector('#random-btn').addEventListener('click', (e) => {
 function createHeroCard(data) {
   
 
-  // imageHolderDiv.removeChild(imageHolderDiv)
-
   const middleCard = document.querySelector('#imgHolder')
 
+  document.querySelector('#imgHolder').pop
+
+  // hero card
   const heroCard = document.createElement('div')
-  heroCard.classList.add = ('hero-card')
+  heroCard.className = ('hero-card')
   console.log(data.image.url)
   
+  // hero Image
   const heroImg = document.createElement('img')
   heroImg.src = data.image.url
+  heroImg.id = ('hero-img')
   heroCard.append(heroImg)
   middleCard.append(heroCard)
+
+  
 }
 
 
