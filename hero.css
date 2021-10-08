@@ -52,21 +52,23 @@ html {
   #question {
     display: flex;
     width: 70%;
+    margin: 10px;
     height: auto;
     border-radius: 10px;
     align-items: center;
+    justify-content: center;
     }  
   
   }
 
-@media (max-width: 600) {
+/* @media (max-width: 600) {
   h1 {
     display: flex;
     flex-direction: column;
     font-size: 2px;
     align-items: center;
   }
-}
+} */
 
 
 #random-btn {
@@ -84,12 +86,15 @@ html {
   padding: 0;
   border-radius: 25px 3px 25px 3px;
   border-style: solid;
-  border-color: white;
+  border-color: #555;
 
 }
 
 #hero-img {
-width: 80%;
+width: 70%;
+border-radius: 5px;
+border-style: solid;
+border-color: #555;
 }
 
 #hero-stats {
@@ -104,4 +109,8 @@ width: 80%;
   padding: 0;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+h2 {
+  margin: 5px;
 }
