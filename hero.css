@@ -90,6 +90,14 @@ html {
 
 }
 
+#hero-name {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  margin: 0 auto;
+  color: whitesmoke;
+  text-shadow: 2px 2px #450000;
+}
+
 #hero-img {
 width: 70%;
 border-radius: 5px;

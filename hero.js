@@ -47,8 +47,8 @@ function createHeroCard(data) {
   // hero name 
   const heroName = document.createElement('h2')
   heroName.id = ('hero-name')
-  heroCard.append(data.name)
-  
+  heroName.append(data.name)
+  heroCard.append(heroName)
 
   // hero Image
   const heroImg = document.createElement('img')
