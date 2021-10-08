@@ -113,3 +113,9 @@ border-color: #555;
 h2 {
   margin: 5px;
 }
+
+#random-btn {
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: #222 ;
+}
